@@ -3,9 +3,9 @@ const app = require('./app')
 const port = process.env.PORT || 4000
 const hostname = '127.0.0.1'
 
-// Home Page
+// Home page Routes
 app.get('/', (req, res) => {
-    res.status(200).send('Hello Everyone.')
+    res.status(200).send('Hello Everyone This is Backend Home Page.')
 })
 
 // Undifined Routes

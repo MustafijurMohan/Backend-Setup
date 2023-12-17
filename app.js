@@ -37,14 +37,12 @@ const limiter = rateLimit({
 // Apply the rate limiting middleware to all requests.
 app.use(limiter)
 
-// Managing Front End Routing
-// app.use(express.static('client/build'))
-// app.get('*', (req, res) => {
-// 	req.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-// })
-
 // Managing Backend API Routing
 app.use('/api/v1', router)
+
+
+// Managing Front End Routing
+
 
 
 module.exports = app
